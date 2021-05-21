@@ -1,0 +1,15 @@
+для файла  access_temp_exec.py необходимо выполнить "chmod +x  access_temp_exec.py" для того что бы файл стал исполняемым
+
+
+в фале access_temp_argv строкой from sys import argv мы указываем модуль sys для работы с аргументом с помощью argv
+далее мы указываем какие парраметры у нас будут аргументами и каким по очередности.
+при выполнение строки "python access_temp_argv.py Gi0/7 298" мы получим вывод вида
+"
+interface Gi0/7
+switchport mode access
+switchport access vlan 299
+switchport nonegotiate
+spanning-tree portfast
+spanning-tree bpduguard enable
+"
+На переданный нами в аргументе интерфейс Gi0/7 присвоился vlan 299
